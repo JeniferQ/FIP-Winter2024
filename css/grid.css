@@ -3,20 +3,28 @@
     padding: 0;
 }
 
+
 .hidden {
     display: none;
 }
 
 /* Mobile Grid */
 
+.full-width-grid-con {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    z-index: 0;
+    max-width: 1200px;
+}
+
 .grid-con {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-column-gap: 20px;
+    grid-template-rows: auto;
+    z-index: 1;
+    grid-column: 1 / -1;
+    padding: 15px;
     max-width: 1200px;
-    margin: 10px auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .col-span-full {grid-column: 1 / -1;}
