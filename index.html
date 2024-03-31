@@ -15,11 +15,11 @@
 <body>
     <header class="grid-con" id="top-header">
 
-        <div id="logo">
+        <div id="logo" class="col-start-1">
             <img src="images/logo-drnut.svg" alt="dr.nut logo">
         </div>
 
-        <nav id="top-nav">
+        <nav id="top-nav" class="col-start-4">
             <h2 class="hidden">Main Navigation</h2>
 
             <input type="checkbox" id="burger">
@@ -43,66 +43,74 @@
     <main>
 
         <section class="grid-con" id="video-con">
-            <h2 class="hidden">Promotional Video</h2>
+            <h2 class="hidden col-span-full">Promotional Video</h2>
         </section>
 
         <section class="grid-con" id="banner-slider">
             <h2 class="hidden">Hero Banners</h2>
-            <img src="images/ravi-sanker-coke-land.jpg">
+            <img class="col-span-full" src="images/ravi-sanker-coke-land.jpg">
 
-            <h2 id="banner-heading">Some text</h2>
-            <p id="banner-text">Some text.</p>
+            <div class="col-span-full">
+                <h2 id="banner-heading">Some text</h2>
+                <p id="banner-text">Some text.</p>
+            </div>
             
-            <button id="banner-button">Explore our products</button>
+            <button class="col-start-1 col-end-3" id="banner-button">Explore our products</button>
         </section>
 
         <section class="grid-con" id="banner-mission">
             <h2 class="hidden">Mission Banner</h2>
             <img src="images/pexels-kelly-2887792.jpg">
 
+            <div class="col-span-full">
             <h2>Help the Environment</h2>
             <p>For every product bought, Dr. Nut will plant a tree in the Amazon Rainforest. Help us protect the planet by buying Dr. Nut today. Click below to contribute or find out more.</p>
-            
-            <button>Learn our mission</button>
+            </div>
+
+            <button class="col-start-1 col-end-3">Learn our mission</button>
         </section>
 
         <section class="grid-con" id="banner-story">
             <h2 class="hidden">Story Banner</h2>
             <img src="images/drnutpic.jpg">
             
+            <div class="col-span-full">
             <h2>From the 30's</h2>
             <p>Did you know that Dr. Nut is over 95 years old? Created in New Orleans, our company produced a variety of soft drinks until 1970. Learn more about our company today!</p>
-            
-            <button>Learn our mission</button>
+            </div>
+
+            <button class="col-start-1 col-end-3">Learn our mission</button>
         </section>
 
         <section class="grid-con" id="banner-contact">
             <h2 class="hidden">Contact Information</h2>
             <img src="images/linkedin-sales-solutions-IjkIOe-2fF4-unsplash.jpg">
             
+            <div class="col-span-full">
             <h2>Get in touch</h2>
             <p>Do you wish to contact us or ask about our job openings? Find our contact information below or fill out the form to get in touch with our team.</p>
-            
-            <div id="phone"><i class="fa-solid fa-phone"></i><p>+1 512 440 4433</p></div>
-            <div id="mail"><i class="fa-solid fa-envelope"></i><p>contact@drnut.com</p></div>
+            </div>
+
+            <div id="phone" class="col-start-1 col-end-3"><i class="fa-solid fa-phone"></i><p>+1 512 440 4433</p></div>
+            <div id="mail"><i class="col-start-3 col-end-5"></i><p>contact@drnut.com</p></div>
 
             <h3 class="hidden">Contact Form</h3>
-            <div class="form">
+            <div class="form" class="col-span-full">
                 <label for="name">Name:</label>
                 <input id="name" type="text" placeholder="ex: Andrea Moore">
             </div>
 
-            <div class="form">
+            <div class="form" class="col-span-full">
                 <label for="email">Email:</label>
                 <input id="email" type="text" placeholder="ex: andreamoore@gmail.com">
             </div>
 
-            <div class="form">
+            <div class="form" class="col-span-full">
                 <label for="comment">Message/Comment:</label>
                 <textarea id="comment" type="text" placeholder="ex: I am a customer service professional and would love to join the Dr. Nut team! Where can I start?"></textarea>
             </div>
 
-            <div class="send">
+            <div class="send" class="col-start-3 col-end-5">
                 <input type="submit" value="Send">
             </div>
         </section>
@@ -110,17 +118,17 @@
 
     <footer class="grid-con" id="footer">
         <h2 class="hidden">Page Footer</h2>
-        <div id="bottom-logo">
+        <div id="bottom-logo" class="col-start-1">
             <img src="images/logo-drnut.svg" alt="dr.nut logo">
         </div>
 
-        <div id="socials">
+        <div id="socials" class="col-start-3 col-end-5">
             <i class="fa-brands fa-square-x-twitter"></i>
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-square-instagram"></i>
         </div>
 
-        <nav id="bottom-nav">
+        <nav id="bottom-nav" class="col-span-full">
             <h3 class="hidden">Bottom Navigation</h3>
 
             <ul>
@@ -132,7 +140,7 @@
             </ul>
         </nav>
 
-        <p id="trademark">Dr. Nut is a registered trademark of The Soda Company Inc. @2024 The Soda Company Inc.</p>
+        <p id="trademark" class="col-span-full">Dr. Nut is a registered trademark of The Soda Company Inc. @2024 The Soda Company Inc.</p>
 
     </footer>
 
