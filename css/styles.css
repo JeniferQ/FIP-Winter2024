@@ -1,3 +1,6 @@
+/* Index Page */
+/* Header Menu */
+
 header {
     background-color: #b42024;
     margin: 0;
@@ -59,22 +62,14 @@ header {
     color: white;
 }
 
+/* Video Container */
+
 #video-con {
     background-color: gray;
     height: 500px;
 }
 
-#banner-slider {
-    height: 600px;
-}
-
-#banner-mission, #banner-story {
-    height: 550px;
-}
-
-#banner-contact {
-    height: 800px;
-}
+/* Background Picture Set Up */
 
 .background-picture {
     overflow: hidden;
@@ -90,6 +85,20 @@ header {
     grid-row: 1/1;
     height: 100%;
     justify-self: center;
+}
+
+/* Other Containers */
+
+#banner-slider {
+    height: 600px;
+}
+
+#banner-mission, #banner-story {
+    height: 550px;
+}
+
+#banner-contact {
+    height: 800px;
 }
 
 .content h2 {
@@ -157,6 +166,8 @@ header {
     font-size: 11pt;
 }
 
+/* Contact Form */
+
 .form {
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
 }
@@ -204,6 +215,8 @@ header {
 #send {
     margin-top: 100px;
 }
+
+/* Footer */
 
 #footer {
     margin: 25px 0;
@@ -261,6 +274,8 @@ header {
     padding-top: 30px;
     border-top: 1px solid #414141;
 }
+
+/* Mission Page */
 
 #mission {
     height: 450px;
@@ -385,4 +400,231 @@ header {
     padding-top: 5px;
     height: 50px;
     width: 400px;
+}
+
+/* Products Page */
+
+.products .grid-con {
+    border-top: 2px solid white;
+    grid-row: 1/1;
+    grid-column: 2/3;
+}
+
+.wave {
+    border-top: 2px solid white;
+    background-color: #b42024;
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+#wave-animation {
+    z-index: 0;
+}
+
+/* Background Animation */
+
+.wave-up {
+    background-image: url("../images/wave1.svg");
+    background-repeat: repeat-x;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    animation: up 8s ease 1 forwards;
+}
+
+@keyframes up {
+    0% {
+        visibility: visible;
+        transform: translateY(100%);
+    }
+
+    10% {
+        visibility: visible;
+        transform: translateY(10%);
+    }
+
+    99.9% {
+        visibility: visible;
+        transform: translateY(10%);
+    }
+
+    100% {
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+}
+
+.wave-down {
+    background-image: url("../images/wave1.svg");
+    background-repeat: repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: down 2s 8s ease 1 forwards;
+    visibility: hidden;
+}
+
+@keyframes down {
+    0% {
+        visibility: visible;
+        transform: translateY(10%);
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(100%);
+    }
+}
+
+/* Slider Image */
+
+#can img {
+    width: 100%;
+}
+
+/* Arrows */
+
+#prev, #next{
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+/* Content */
+
+#info {
+    text-align: center;
+    color: white;
+}
+
+#info h1 {
+    font-family: 'League Spartan';
+    color: white;
+    font-size: 24pt;
+    margin-top: 50px;
+}
+
+#rating {
+    display: inline-block;
+}
+
+#rating img {
+    width: 180px;
+}
+
+.link {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: white;
+    margin-left: 20px;
+    font-size: 12pt;
+}
+
+#nv-table {
+    background-color: transparent;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    border: 1.5px solid white;
+    color: white;
+    margin: 40px 10px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#nv-table h2 {
+    font-size: 15pt;
+}
+
+#nv-table h3 {
+    font-size: 12pt;
+    font-weight: lighter;
+    padding: 5px 0 15px 0;
+    border-bottom: 2px solid white;
+}
+
+#nv-table h4 {
+    margin: 10px 0;
+    font-size: 9pt;
+    text-align: right;
+}
+
+#nv-table ul {
+    font-size: 11pt;
+    list-style-type: none;
+}
+
+#nv-table li:nth-child(odd) {
+    background-color: #dddddd7c;
+}
+
+#nv-table li {
+    padding: 5px 0;
+}
+
+.label-heading {
+    font-weight: bold;
+}
+
+.label-value {
+    font-weight: lighter;
+    float: right;
+}
+
+#nv-table p {
+    margin-top: 10px;
+    padding-top: 18px;
+    line-height: 20px;
+    border-top: 2px solid white;
+    font-size: 9pt;
+}
+
+.buttons {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 14pt;
+    color: white;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 10px 60px 10px;
+}
+
+#buy {
+    background-color: #940005;
+    border: 2px solid #840004;
+    border: none;
+    box-shadow: 1px 10px 10px #00000025;
+}
+
+#write {
+    background-color: transparent;
+    border: 2px solid white;
+    box-shadow: 1px 10px 10px #00000025;
+}
+
+#flavors {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#flavors p {
+    font-family: 'League Spartan', Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.flavor-selector img {
+    padding-left: 15px;
+    display: inline-block;
+    width: 80px;
+}
+
+.flavor-selector img:first-child {
+    padding-left: 0;
+}
+
+.flavor-selector img:hover {
+    transform: scale(1.1, 1.1);
 }
