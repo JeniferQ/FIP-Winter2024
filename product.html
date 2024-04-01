@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/983615787b.js" crossorigin="anonymous"></script>
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Dr. Nut - Main Page</title>
+</head>
+
+<body>
+    <header class="grid-con" id="top-header">
+        <h1 class="hidden">Welcome to Dr.Nut's Products Page!</h1>
+        <div id="logo" class="col-start-1">
+            <img src="images/logo-drnut.svg" alt="dr.nut logo">
+        </div>
+
+        <nav id="top-nav" class="col-span-full">
+            <h2 class="hidden">Main Navigation</h2>
+
+            <input type="checkbox" id="burger">
+            <label for="burger">
+                <img src="images/bars-solid.svg" alt="burger menu icon">
+            </label>
+
+            <div id="burger-con">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+    <h1 class="hidden">Banner Animation</h1>
+
+    <div class="products wave full-width-grid-con">
+
+        <section id="wave-animation" class="l-col-span-full">
+            <div class="wave-up"></div>
+            <div class="wave-down"></div>
+        </section>
+
+        <div class="grid-con">
+            <button id="prev" class="col-start-1">&#10094;</button>
+            <section id="can" class="col-start-2 col-end-4">
+                <h2 class="hidden">Product Image</h2>
+                <img class="soda" src="images/can1.png" alt="soda">
+            </section>
+            <button id="next" class="col-start-4">&#10095;</button>
+    
+            <section id="info" class="col-span-full l-col-start-7 l-col-end-12 l-row-start-1">
+                <h2 class="hidden">Product Information</h2>
+                <div id="nut"><h1>DR. NUT PISTACHIO</h1></div>
+                <div id="rating">
+                    <img src="images/stars.svg" alt="4 star rating">
+                    <a class="link" href="#">Read reviews</a>
+                </div>
+            </section>
+    
+            <section id="nv-table" class="col-span-full l-col-start-7 l-col-end-11 l-row-start-2">
+                <h2 class="hidden">Nutritional Information</h2>
+                <h2>Nutrition Facts / Valeur Nutritive</h2>
+                <h3>Serving Size: 355 mL</h3>
+    
+                <h4>Amount</h4>
+    
+                <ul id="nv-info">
+                    <li><span class="label-heading">Calories</span><span class="label-value">120cal</span></li>
+                    <li><span class="label-heading">Fat</span><span class="label-value">5g</span></li>
+                    <li><span class="label-heading">Sodium</span><span class="label-value">20mg</span></li>
+                    <li><span class="label-heading">Carbohydrates</span><span class="label-value">40g</span></li>
+                    <li><span class="label-heading">Sugars</span><span class="label-value">30g</span></li>
+                    <li><span class="label-heading">Protein</span><span class="label-value">0g</span></li>
+                </ul>
+    
+                <p class="ing">Ingredients: Carbonated Water, Sugar, Pistachio Concentrate, Caffeine, Sodium Benzoate, Citric Acid and Caramel Color.</p>
+            </section>
+    
+            <h2 class="hidden">Buttons</h2>
+            <button class="buttons col-start-1 col-end-3" id="buy">Buy now</button>
+            <button class="buttons col-start-3 col-end-5" id="write">Write review</button>
+    
+            <section id="flavors" class="col-span-full l-col-start-7 l-col-end-11 l-row-start-4">
+                <h2 class="hidden">Flavor Picker</h2>
+                <p>FLAVOR SELECTION:</p>
+                <div class="flavor-selector">
+                <img src="images/can.png" alt="soda 1">
+                <img src="images/can.png" alt="soda 2">
+                <img src="images/can.png" alt="soda 3">
+                <img src="images/can.png" alt="soda 4">
+                </div>
+            </section>
+
+        </div>
+    </div>
+    </main>
+
+    <footer class="grid-con" id="footer">
+        <h2 class="hidden">Page Footer</h2>
+        <div id="bottom-logo" class="col-start-1">
+            <img src="images/logo-drnut-red.svg" alt="dr.nut logo">
+        </div>
+
+        <div id="socials" class="col-start-3 col-end-5">
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+
+        <nav id="bottom-nav" class="col-span-full">
+            <h3 class="hidden">Bottom Navigation</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </nav>
+
+        <p id="trademark" class="col-span-full">Dr. Nut is a registered trademark of The Soda Company Inc<br>@2024 The Soda Company Inc.</p>
+
+    </footer>
+</body>
+
+</html>
