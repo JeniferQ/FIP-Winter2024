@@ -11,11 +11,58 @@ header {
 }
 
 #logo {
-    width: 80%;
+    width: 80px;
+    position: relative;
 }
 
-#top-nav {
+#top-nav label {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+#top-nav label img {
+    width: 35px;
+    cursor: pointer;
+    transition: all .2s ease;
+} 
+ 
+#top-nav input, #burger-con {
     display: none;
+}
+
+#top-nav input:checked ~ #burger-con {
+    display: block;
+}
+ 
+#top-nav input:checked ~ label img {
+    transform: rotate(90deg);
+}
+
+#top-nav ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#top-nav li {
+    border-bottom: 2px solid white;
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin: 0 100px;
+}
+ 
+#top-nav li:last-child {
+    border: none;
+}
+ 
+#top-nav a {
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
 #video-con {
@@ -24,35 +71,58 @@ header {
 }
 
 #banner-slider {
-    height: 550px;
-    overflow: hidden;
-    position: relative;
+    height: 600px;
 }
 
-#banner-slider img {
-    display: block;
+#banner-mission, #banner-story {
+    height: 550px;
+}
+
+#banner-contact {
+    height: 800px;
+}
+
+.background-picture {
+    overflow: hidden;
+}
+
+.background-picture .grid-con {
+    grid-row: 1/1;
+    margin: 0;
     position: absolute;
 }
 
-.banner-content h2 {
+.background-picture img {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    position: relative;
+    height: 100%;
+    justify-self: center;
+}
+
+.content h2 {
     font-family: 'League Spartan', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: white;
-    margin-top: 180px;
-    font-size: 25pt;
+    margin-top: 150px;
+    font-size: 24pt;
 }
 
-.banner-content p {
+#banner-contact h2 {
+    margin-top: 100px;
+}
+
+.content p {
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
     color: white;
+    font-size: 13pt;
+    line-height: 25px;
     margin-top: 10px;
-    font-size: 14pt;
 }
 
-.banner-content button {
+.content button {
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
-    color: #b42024;
-    font-size: 10pt;
+    font-size: 11pt;
 
     background-color: white;
     border-radius: 20px;
@@ -62,4 +132,140 @@ header {
     margin-top: 25px;
     height: 50px;
     width: 190px;
+}
+
+#banner-slider button {
+    color: #b42024;
+}
+
+#banner-mission button {
+    color: #007102;
+}
+
+#banner-story button {
+    color: #1c1c1c;
+}
+
+.icon .fa-solid {
+    color: white;
+    font-size: 14pt;
+    margin-top: 15px;
+    float: left;
+}
+
+.fa-phone, .fa-envelope {
+    margin-right: 10px;
+}
+
+.icon {
+    margin: 5px 0 30px 0;
+}
+
+.icon p {
+    font-size: 11pt;
+}
+
+.form {
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form label {
+    font-family: inherit;
+    font-size: 12pt;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input[type=text], .form input[type=submit], .form textarea{
+    font-family: inherit;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    padding: 12px;
+}
+
+.form input[type=text], .form textarea {
+    font-size: 11pt;
+    color: #414141;
+    border: 2px solid #e3e3e3;
+    width: calc(100% - 30px);
+}
+
+.form input:focus, .form textarea {
+    outline: none;
+}
+
+.form textarea {
+    height: 100%;
+    resize: none;
+}
+
+.form input[type=submit] {
+    font-size: 12pt;
+    color: white;
+    background-color: #b42024;
+    border: 2px solid #ae0000;
+    width: 100%;
+    cursor: pointer;
+}
+
+#send {
+    margin-top: 100px;
+}
+
+#footer {
+    margin: 25px 0;
+}
+
+#bottom-logo {
+    width: 80px;
+}
+
+#socials {
+    text-align: right;
+}
+
+#socials .fa-brands {
+    margin-top: 10px;
+    padding-left: 5px;
+    color: #b42024;
+    font-size: 30pt;
+    cursor: pointer;
+}
+
+#bottom-nav ul {
+    margin: 50px 0 30px 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#bottom-nav li {
+    display: inline-block;
+    margin: 0 25px 20px 0;
+}
+
+#bottom-nav li:first-child {
+    margin-left: 25px;
+}
+
+#bottom-nav li:last-child{
+    margin-right: 0;
+}
+
+#bottom-nav a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
+    color: #979797;
+}
+
+#trademark {
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 22px;
+    color: #979797;
+
+    padding-top: 30px;
+    border-top: 1px solid #414141;
 }
