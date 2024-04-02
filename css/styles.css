@@ -773,3 +773,44 @@ header {
     }
 
 }
+
+@media screen and (min-width: 1200px) {
+    
+    #bottom-nav li {
+        margin: 0 3vw 0 0;
+    }
+
+    #bottom-nav li:last-child{
+        margin-right: 3vw;
+    }
+
+    #socials {
+        text-align: center;
+    }
+
+    #bottom-nav ul {
+        margin: 20px 0 40px 0;
+        text-align: right;
+    }
+    
+    #bottom-nav li {
+        display: inline-block;
+        margin: 0 25px 20px 0;
+    }
+    
+    #bottom-nav li:first-child {
+        margin-left: 25px;
+    }
+    
+    #bottom-nav li:last-child{
+        margin-right: 0;
+    }
+    
+    #bottom-nav a {
+        text-decoration: none;
+        font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12pt;
+        color: #979797;
+    }
+
+}
