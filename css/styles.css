@@ -398,8 +398,33 @@ header {
     font-size: 10pt;
 }
 
+#web1 {
+    background-image: url(../images/pexels-kaboompics-com-5808.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#web2 {
+    background-image: url(../images/pexels-maria-paula-medina-13804626.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#web3 {
+    background-image: url(../images/venti-views-JBAPQ1g5h24-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
 .banner-website {
     height: 320px;
+}
+
+.web-button {
+    text-align: center;
 }
 
 .web-button button {
@@ -417,7 +442,7 @@ header {
     margin-top: 220px;
     padding-top: 5px;
     height: 50px;
-    width: 400px;
+    width: 90%;
 }
 
 /* Products Page */
