@@ -445,7 +445,7 @@ header {
     width: 90%;
 }
 
-/* Products Page */
+*/ Products Page */
 
 .products .grid-con {
     border-top: 2px solid white;
@@ -677,6 +677,10 @@ header {
     #burger-con ul {
         text-align: right;
     }
+
+    #burger-con {
+        display: inline;
+    }
     
     #burger-con li {
        border: none;
@@ -691,6 +695,81 @@ header {
     
     #top-nav label {
         display: none;
+    }
+
+    #space {
+        display: none;
+    }
+
+    .background-picture img {
+        height: auto;
+        width: 100%;
+    }
+
+    #banner-slider {
+        height: 600px;
+    }
+    
+    #banner-mission, #banner-story {
+        height: 500px;
+    }
+
+    #banner-contact h2 {
+        font-size: 26pt;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content h2 {
+        font-size: 28pt;
+    }
+
+    .content p {
+        line-height: 30px;
+    }
+
+    .content button {
+        width: 22vw;
+    }
+
+    .content .icon, .form {
+        text-align: left;
+    }
+
+    .icon .fa-solid {
+        font-size: 14pt;
+    }
+    
+    .form input[type=text], .form input[type=submit], .form textarea {
+        padding: 14px 12px;
+        width: calc(100% - 28px);
+    }
+
+    .form input[type=submit] {
+        padding: 14px 12px;
+        width: 100%;
+    }
+
+    #bottom-nav ul {
+        margin-top: 30px;
+    }
+
+    #bottom-nav li {
+        margin: 0 3vw 0 0;
+    }
+
+    #bottom-nav li:last-child{
+        margin-right: 3vw;
+    }
+
+    .web-button {
+        text-align: center;
+    }
+
+    .web-button button {
+        width: 90%;
     }
 
 }
