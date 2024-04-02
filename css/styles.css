@@ -90,7 +90,8 @@ header {
 .background-picture img {
     grid-column: 1/-1;
     grid-row: 1/1;
-    height: 100%;
+    height: 110%;
+    width: auto;
     justify-self: center;
 }
 
@@ -224,6 +225,16 @@ header {
 }
 
 /* Footer */
+
+/* Footer */
+
+.bottom {
+    background-color: white;
+}
+
+.bottom .grid-con {
+    grid-column: 2/3;
+}
 
 #footer {
     margin: 25px 0;
