@@ -13,42 +13,43 @@
 </head>
 
 <body>
-    <header class="grid-con" id="top-header">
-        <h1 class="hidden">Welcome to Dr.Nut's Main Page!</h1>
-        <div id="logo" class="col-start-1">
-            <img src="images/logo-drnut.svg" alt="dr.nut logo">
-        </div>
-
-        <nav id="top-nav" class="col-span-full">
-            <h2 class="hidden">Main Navigation</h2>
-
-            <input type="checkbox" id="burger">
-            <label for="burger">
-                <img src="images/bars-solid.svg" alt="burger menu icon">
-            </label>
-
-            <div id="burger-con">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="mission.html">Our Mission</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+    <div class="full-width-grid-con menu">
+        <header class="grid-con" id="top-header">
+            <h1 class="hidden">Welcome to Dr.Nut's Main Page!</h1>
+            <div id="logo" class="col-start-1">
+                <img src="images/logo-drnut.svg" alt="dr.nut logo">
             </div>
-        </nav>
-
-    </header>
+    
+            <nav id="top-nav" class="col-span-full m-col-start-4 m-col-end-13">
+                <h2 class="hidden">Main Navigation</h2>
+    
+                <input type="checkbox" id="burger">
+                <label for="burger">
+                    <img src="images/bars-solid.svg" alt="burger menu icon">
+                </label>
+    
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+        </header>
+    </div>
 
     <main>
-
         <section class="full-width-grid-con background-picture" id="mission">
             <h2 class="hidden">Mission Hero</h2>
             <img src="images/pexels-tom-fisk-2739664.jpg">
 
             <div class="grid-con mission">
 
-            <div class="col-start-2 col-end-4">
+            <div class="col-start-2 col-end-4 m-col-start-5 m-col-end-8">
                 <h2>Our mission</h2>
                 <p>what we do<br>why we do.</p> 
             </div>
@@ -58,7 +59,7 @@
         <section class="text grid-con">
             <h2 class="hidden">How we started.</h2>
 
-            <div class="col-span-full">
+            <div class="col-span-full m-col-span-full">
                 <h2>The change of plans</h2>
                 <p>Our compromise with the environment started in 2001, when we felt the need to change our focus for a greater cause. Our company understood the importance of taking care of the environment, and so we decided to take action. With a deep sense of responsibility, we committed ourselves to incorporating eco-friendly practices into everything we do.</p>
                 <p>Every day, we're driven by our dedication to protecting the environment. We're always on the lookout for ways to use sustainable materials in our products and to make our manufacturing processes more energy-efficient. We're also proactive in reducing waste and finding innovative ways to reuse or recycle materials whenever we can. It's all part of our mission to lessen our impact on the Earth and leave a positive mark.</p>
@@ -72,7 +73,7 @@
 
             <div class="grid-con goals">
 
-            <div class="col-span-full">
+            <div class="col-span-full m-col-span-full">
                 <p id="goal-text">We are thrilled to announce that in 2023, our company successfully planted over 20 thousand trees in the Amazon Rainforest, making us the 8th company that plants the most trees in the world. This achievement pleases us deeply and we plan to double this number by 2025.</p>
 
                 <div class="anim">
@@ -91,7 +92,7 @@
         <section class="text grid-con">
             <h2 class="hidden">Our current goals.</h2>
 
-            <div class="col-span-full">
+            <div class="col-span-full m-col-span-full">
                 <h2>For a better future</h2>
                 <p>We're absolutely thrilled to share some exciting news with you: Dr. Nut is teaming up with One Planted Tree! Now, every time you purchase one of our products, you're not just getting something delicious – you're also helping to plant a tree in the Amazon rainforest. It's a partnership that fills us with pride, knowing that together, we're making a direct impact on one of the world's most precious ecosystems.</p>
                 <p>But that's not all! We're also excited to tell you that a portion of our profits goes to supporting the Amazon Conservation Team. They're on a mission to protect not just the environment, but also the cultures of indigenous communities living in the Amazon rainforest. By backing their efforts, we're not only safeguarding cultural heritage but also promoting biodiversity and sustainable living practices that benefit us all. Because preserving the unique cultures of the Amazon isn't just important locally – it's a global endeavor that offers valuable lessons in living in harmony with nature.</p>
@@ -99,70 +100,55 @@
             </div>
         </section>
 
-        <section class="full-width-grid-con background-picture banner-website">
+        <section class="banner-website-grid">
             <h2 class="hidden">Story Banner</h2>
-            <img src="images/pexels-kaboompics-com-5808.jpg">
             
-            <div class="grid-con web-button">
-            <div class="col-start-1 col-end-5">
-            <button>Donate to the one tree planted here</button>
+            <div class="web-button col-span-full m-col-start-1 m-col-end-5" id="web1">
+                <button>Donate to the one tree planted here</button>
             </div>
-            </div>
-        </section>
 
-        <section class="full-width-grid-con background-picture banner-website">
-            <h2 class="hidden">Story Banner</h2>
-            <img src="images/pexels-maria-paula-medina-13804626.jpg">
-            
-            <div class="grid-con web-button">
-            <div class="col-start-1 col-end-5">
-            <button>Donate to the amazon conservation team here</button>
+            <div class="web-button col-span-full m-col-start-5 m-col-end-9" id="web2">
+                <button>Donate to the amazon conservation team here</button>
             </div>
-            </div>
-        </section>
 
-        <section class="full-width-grid-con background-picture banner-website">
-            <h2 class="hidden">Story Banner</h2>
-            <img src="images/venti-views-JBAPQ1g5h24-unsplash.jpg">
-            
-            <div class="grid-con web-button">
-            <div class="col-start-1 col-end-5">
-            <button>Learn about our production here</button>
-            </div>
+            <div class="web-button col-span-full m-col-start-9 m-col-end-13" id="web3">
+                <button>Learn more about our production here</button>
             </div>
         </section>
 
     </main>
 
-    <footer class="grid-con" id="footer">
-        <h2 class="hidden">Page Footer</h2>
-        <div id="bottom-logo" class="col-start-1">
-            <img src="images/logo-drnut-red.svg" alt="dr.nut logo">
-        </div>
-
-        <div id="socials" class="col-start-3 col-end-5">
-            <i class="fa-brands fa-square-x-twitter"></i>
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-        </div>
-
-        <nav id="bottom-nav" class="col-span-full">
-            <h3 class="hidden">Bottom Navigation</h3>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="mission.html">Our Mission</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-            </ul>
-        </nav>
-
-        <p id="trademark" class="col-span-full">Dr. Nut is a registered trademark of The Soda Company Inc<br>@2024 The Soda Company Inc.</p>
-
-    </footer>
+    <div class="full-width-grid-con bottom">
+        <footer class="grid-con" id="footer">
+            <h2 class="hidden">Page Footer</h2>
+            <div id="bottom-logo" class="col-start-1 m-col-start-1">
+                <img src="images/logo-drnut-red.svg" alt="dr.nut logo">
+            </div>
+    
+            <div id="socials" class="col-start-3 col-end-5 m-col-start-10 m-col-end-13 l-col-start-3 l-col-end-5">
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+    
+            <nav id="bottom-nav" class="col-span-full m-col-span-full l-col-start-5 l-col-end-13">
+                <h3 class="hidden">Bottom Navigation</h3>
+    
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </nav>
+    
+            <p id="trademark" class="col-span-full m-col-span-full">Dr. Nut is a registered trademark of The Soda Company Inc<br id="space">@2024 The Soda Company Inc.</p>
+    
+        </footer>
+    </div>
 
 </body>
 </html>
