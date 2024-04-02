@@ -109,6 +109,10 @@ header {
     height: 800px;
 }
 
+.content {
+    position: relative;
+}
+
 .content h2 {
     font-family: 'League Spartan', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -171,7 +175,7 @@ header {
 }
 
 .icon p {
-    font-size: 11pt;
+    font-size: 12pt;
 }
 
 /* Contact Form */
@@ -314,10 +318,10 @@ header {
 }
 
 .mission p {
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: bold;
     line-height: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .text {
@@ -339,7 +343,7 @@ header {
     text-align: justify;
     text-justify: inter-word;
     line-height: 26px;
-    margin-top: 20px;
+    margin: 20px 0 30px 0;
 }
 
 .text h3 {
@@ -362,9 +366,9 @@ header {
 }
 
 #goal-text {
-    font-size: 11pt;
+    font-size: 13pt;
     line-height: 30px;
-    margin-top: 60px;
+    margin-top: 15%;
 }
 
 .anim {
@@ -672,7 +676,7 @@ header {
     transform: scale(1.1, 1.1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 775px) {
 
     #burger-con ul {
         text-align: right;
@@ -714,8 +718,20 @@ header {
         height: 500px;
     }
 
+    #banner-contact {
+        height: 700px;
+    }
+
     #banner-contact h2 {
         font-size: 26pt;
+    }
+
+    #banner-contact .content h2 {
+        margin-top: 90px;
+    }
+
+    #banner-contact .grid-con {
+        grid-template-rows: 200px 80px 100px 100px 100px;
     }
 
     .content {
@@ -738,10 +754,15 @@ header {
         text-align: left;
     }
 
+    .icon p {
+        font-size: 12pt;
+    }
+
     .icon .fa-solid {
         font-size: 14pt;
+        margin-top: 16px;
     }
-    
+
     .form input[type=text], .form input[type=submit], .form textarea {
         padding: 14px 12px;
         width: calc(100% - 28px);
@@ -771,6 +792,70 @@ header {
     .web-button button {
         width: 90%;
     }
+
+    #mission {
+        height: 400px;
+    }
+
+    .mission h2 {
+        margin-top: 120px;
+        font-size: 25pt;
+    }
+    
+    .mission p {
+        font-size: 18pt;
+        line-height: 35px;
+    }
+
+    #achievement {
+        height: 500px;
+    }
+
+    #goal-text {
+        font-size: 14pt;
+        line-height: 32px;
+        margin-top: 10%;
+    }
+    
+    .pop {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+    }
+    
+    .pop h3 {
+        font-size: 18pt;
+    }
+    
+    .pop p {
+        font-size: 11pt;
+    }
+    
+    .text-pop {
+        font-size: 12pt;
+    }
+    
+
+    .text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .text h2 {
+        font-size: 20pt;
+    }
+    
+    .text p {
+        text-align: justify;
+        text-align-last: center;
+        text-justify: inter-word;
+        line-height: 28px;
+    }
+    
+    .text h3 {
+        font-size: 14pt;
+    }
+
 
 }
 
@@ -811,6 +896,15 @@ header {
         font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
         font-size: 12pt;
         color: #979797;
+    }
+
+    .icon p {
+        font-size: 14pt;
+    }
+
+    .icon .fa-solid {
+        font-size: 18pt;
+        margin-top: 14px;
     }
 
 }
