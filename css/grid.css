@@ -25,6 +25,11 @@
     z-index: 1;
 }
 
+.banner-website-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .col-span-full {grid-column: 1 / -1;}
 
 .col-start-1   {grid-column-start: 1;}
@@ -49,7 +54,12 @@
         padding: 15px 20px;
     }
 
-    .t-col-span-full {grid-column: 1 / -1;}
+    .banner-website-grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .m-col-span-full {grid-column: 1 / -1;}
     
     .m-col-start-1 {grid-column-start: 1;}
     .m-col-start-2 {grid-column-start: 2;}
