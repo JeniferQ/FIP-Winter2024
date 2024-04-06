@@ -10,6 +10,7 @@ header {
     top: 0;
     position: sticky;
     z-index: 2;
+    box-shadow: 0 5px 8px #00000036;
 }
 
 .menu .grid-con {
@@ -230,8 +231,6 @@ header {
 #send {
     margin-top: 100px;
 }
-
-/* Footer */
 
 /* Footer */
 
@@ -462,7 +461,6 @@ header {
 }
 
 .wave {
-    border-top: 2px solid white;
     background-color: #b42024;
     position: relative;
     overflow: hidden;
@@ -578,8 +576,11 @@ header {
     font-family: 'Trebuchet MS', Arial, sans-serif;
     border: 1.5px solid white;
     color: white;
+
     margin: 40px 10px;
     padding: 15px;
+    max-width: 420px;
+    justify-self: center;
     overflow: hidden;
 }
 
@@ -595,7 +596,7 @@ header {
 }
 
 #nv-table h4 {
-    margin: 10px 0;
+    margin: 10px;
     font-size: 9pt;
     text-align: right;
 }
@@ -610,7 +611,7 @@ header {
 }
 
 #nv-table li {
-    padding: 5px 0;
+    padding: 5px 10px;
 }
 
 .label-heading {
@@ -641,16 +642,20 @@ header {
 }
 
 #buy {
+    border: none;
     background-color: #940005;
     border: 2px solid #840004;
-    border: none;
     box-shadow: 1px 10px 10px #00000025;
+    justify-self: right;
+    width: 190px;
 }
 
 #write {
     background-color: transparent;
     border: 2px solid white;
     box-shadow: 1px 10px 10px #00000025;
+    justify-self: left;
+    width: 190px;
 }
 
 #flavors {
