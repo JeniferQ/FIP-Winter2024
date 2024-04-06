@@ -865,6 +865,12 @@ header {
         font-size: 14pt;
     }
 
+    #info, #nv-table {
+        grid-row: 1;
+    }
+
+
+
 
 }
 
