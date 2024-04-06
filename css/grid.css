@@ -50,7 +50,6 @@
     .grid-con {
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-column-gap: 18px;
         padding: 15px 20px;
     }
 
