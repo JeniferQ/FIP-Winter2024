@@ -475,73 +475,63 @@ header {
 /* Background Animation */
 
 .wave-up {
-    background-image: url("../images/wave1.svg");
     background-repeat: repeat-x;
     position: absolute;
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    animation: up 8s ease 1 forwards;
+    animation: up 1s ease 1 forwards;
 }
 
 @keyframes up {
     0% {
-        visibility: visible;
         transform: translateY(100%);
     }
 
-    10% {
-        visibility: visible;
-        transform: translateY(10%);
-    }
-
-    99.9% {
-        visibility: visible;
-        transform: translateY(10%);
-    }
-
     100% {
-        visibility: hidden;
-        transform: translateY(10%);
+        transform: translateY(30%);
     }
 }
 
 .wave-down {
-    background-image: url("../images/wave1.svg");
     background-repeat: repeat-x;
     position: absolute;
     width: 100%;
     height: 100%;
-    animation: down 2s 8s ease 1 forwards;
-    visibility: hidden;
+    opacity: 0;
 }
 
 @keyframes down {
     0% {
-        visibility: visible;
-        transform: translateY(10%);
+        opacity: 0;
     }
+    
     100% {
-        visibility: visible;
-        transform: translateY(100%);
+        opacity: 1;
     }
 }
 
 /* Slider Image */
 
-
 #can {
-    text-align: center;
+    overflow: hidden;
+    position: relative;
+    max-width: 250px;
+}
+
+#product-slider {
+    display: flex;
 }
 
 #can img {
-    width: 100%;
-    z-index: 0;
+    max-width: 100%;
+    height: 100%;
 }
 
 /* Arrows */
 
 #prev, #next {
+    text-align: center;
     z-index: 1;
     font-size: 50px;
     color: white;
@@ -560,6 +550,7 @@ header {
 
 #info h1 {
     font-family: 'League Spartan';
+    text-transform: uppercase;
     color: white;
     font-size: 24pt;
     margin-top: 50px;
@@ -869,7 +860,7 @@ header {
     }
 
     .products .grid-con {
-        grid-template-rows: 90px 310px 60px auto;
+        grid-template-rows: 90px 310px 90px auto;
     }
 
     .wave {
@@ -878,6 +869,10 @@ header {
 
     #prev, #next, #can {
         grid-row: 1/3;
+    }
+
+    #can {
+        height: 500px;
     }
 
     #info {
@@ -946,12 +941,6 @@ header {
     
     .flavor-selector img:hover {
         transform: scale(1.1, 1.1);
-    }
-
-    #can img {
-        margin-top: 20px;
-        height: auto;
-        width: 100%;
     }
 
     #info {
