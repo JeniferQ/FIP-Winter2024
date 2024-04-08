@@ -516,7 +516,8 @@ header {
 #can {
     overflow: hidden;
     position: relative;
-    max-width: 250px;
+    max-width: 240px;
+    margin-left: 1.5vw;
 }
 
 #product-slider {
