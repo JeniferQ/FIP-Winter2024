@@ -80,6 +80,90 @@ header {
     height: 500px;
 }
 
+/* Slideshow Container */
+
+.background-slide {
+    overflow: hidden;
+}
+
+.background-slide .grid-con {
+    grid-row: 1/1;
+    grid-column: 2/3;
+}
+
+#image-slider {
+    display: flex;
+    width: 100%;
+    grid-column: 1/-1;
+    transition: transform .5s ease-in-out;
+    position: absolute;
+}
+
+.slider-image {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    justify-self: center;
+    max-width: 100%;
+    min-height: 600px;
+    max-height: auto;
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffffa5;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+    transition: background-color 0.5s ease;
+}
+
+.dot::after, .dot:hover {
+    background-color: white;
+  }
+
+
+.banner-content h2 {
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 150px;
+    font-size: 24pt;
+}
+
+.banner-content p {
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 13pt;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.banner-content button {
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    font-size: 11pt;
+
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 25px;
+    height: 50px;
+    width: 190px;
+}
+
 /* Background Picture Set Up */
 
 .background-picture {
@@ -103,6 +187,7 @@ header {
 
 #banner-slider {
     height: 600px;
+    position: relative;
 }
 
 #banner-mission, #banner-story {
@@ -232,7 +317,6 @@ header {
     margin-top: 100px;
 }
 
-/* Footer */
 
 /* Footer */
 
@@ -319,6 +403,19 @@ header {
     font-size: 22pt;
     padding: 10px 10px 5px 10px;
     background-color: rgba(0, 210, 140, 0.5);
+    overflow: hidden;
+    animation: upappear 1s ease forwards;
+}
+
+@keyframes upappear {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .mission p {
@@ -326,6 +423,8 @@ header {
     font-weight: bold;
     line-height: 30px;
     margin-top: 20px;
+    opacity: 0;
+    animation: reveal 1s 1s ease forwards;
 }
 
 .text {
@@ -373,38 +472,75 @@ header {
     font-size: 13pt;
     line-height: 30px;
     margin-top: 15%;
+    opacity: 0;
+    animation: reveal 2s ease forwards;
 }
 
 .anim {
-    place-items: center;
     margin-top: 40px;
 }
 
-.anim div {
-    display: inline-block;
+.anim {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-.pop {
-    border: 2px solid white;
+.pop svg {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    
+    transform: rotate(270deg);
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: draw 2s 2s linear forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+    }
+}
+
+#text1 {
+    position: absolute;
+    top: 20%;
+    margin-left: 10px;
+}
+
+#text2 {
+    position: absolute;
+    top: 20%;
+    margin-left: 8px;
 }
 
 .pop h3 {
-    padding-top: 20px;
     font-size: 18pt;
+    opacity: 0;
+    animation: reveal 1s 3s ease forwards;
 }
 
 .pop p {
     padding-top: 5px;
     font-size: 10pt;
+    opacity: 0;
+    animation: reveal 1s 3s ease forwards;
 }
 
 .text-pop {
     padding: 20px;
     font-size: 10pt;
+    opacity: 0;
+    animation: reveal 1s 1s ease forwards;
+}
+
+#tree-pop, .text-expand {
+    display: none;
 }
 
 #web1 {
@@ -452,9 +588,11 @@ header {
     padding-top: 5px;
     height: 50px;
     width: 90%;
+    opacity: 0;
+    animation: upappear 1s ease forwards;
 }
 
-*/ Products Page */
+/* Products Page */
 
 .products .grid-con {
     grid-row: 1/1;
@@ -466,6 +604,7 @@ header {
     position: relative;
     overflow: hidden;
     padding-top: 50px;
+    margin: 0;
 }
 
 #wave-animation {
@@ -477,7 +616,6 @@ header {
 .wave-up {
     background-repeat: repeat-x;
     position: absolute;
-    margin: 0 auto;
     width: 100%;
     height: 100%;
     animation: up 1s ease 1 forwards;
@@ -489,7 +627,7 @@ header {
     }
 
     100% {
-        transform: translateY(30%);
+        transform: translateY(20%);
     }
 }
 
@@ -522,6 +660,7 @@ header {
 
 #product-slider {
     display: flex;
+    transition: transform .5s ease-in-out;
 }
 
 #can img {
@@ -839,7 +978,32 @@ header {
     .text-pop {
         font-size: 12pt;
     }
-    
+
+    #tree-pop {
+        background-image: url(../images/tree.svg);
+        margin: 50px auto 0 auto;
+        width: 50px;
+        height: 30px;
+        display: grid;
+        overflow: hidden;
+        opacity: 0;
+        animation: clone 4s 2s ease forwards;
+    }
+
+    @keyframes clone {
+        to {
+            opacity: 1; 
+            width: 650px;
+        }
+    }
+
+    .text-expand {
+        margin-top: 15px;
+        font-size: 10pt;
+        opacity: 0;
+        animation: reveal 1s 4s ease forwards;
+    }
+
     .text {
         margin-bottom: 20px;
         text-align: center;
@@ -1016,5 +1180,9 @@ header {
 
     #flavors p {
         width: auto;
+    }
 
-}}
+    .text-expand {
+        display: grid;
+    }
+}
