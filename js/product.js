@@ -1,12 +1,12 @@
 (() => {
     const slider = document.querySelector('#product-slider'),
+    banner = document.querySelector('#image-slider'),
     prevBtn = document.querySelector('#prev'),
     nextBtn = document.querySelector('#next'),
     productInfo = document.querySelector("#info"),
     nutritionalTable = document.querySelector("#nv-table"),
     waveUp = document.querySelector('.wave-up'),
     flavorImages = document.querySelectorAll('.flavor-selector img');
-    dots = document.querySelectorAll('.dots dot');
 
     const products = [
         { name: "Dr. Nut Almond", stars: "4.5", rating: "images/stars45.svg" },
@@ -34,13 +34,13 @@
         let waveColor = '';
     
         if (count === 0) {
-            waveColor = 'images/wave1.svg'; // Change the URL accordingly
+            waveColor = 'images/wave1.svg';
         } else if (count === 1) {
-            waveColor = 'images/wave2.svg'; // Change the URL accordingly
+            waveColor = 'images/wave2.svg'
         } else if (count === 2) {
-            waveColor = 'images/wave3.svg'; // Change the URL accordingly
+            waveColor = 'images/wave3.svg';
         } else if (count === 3) {
-            waveColor = 'images/wave4.svg'; // Change the URL accordingly
+            waveColor = 'images/wave4.svg';
         }
     
         waveUp.querySelector('img').src = waveColor;
@@ -134,8 +134,7 @@
     }
 
     flavorImages.forEach((image, index) => image.addEventListener('click', () => pickFlavor(index)));
-    dots.forEach((span, index) => span.addEventListener('click', () => pickSlide(index)));
-    
+   
     showText();
     
     prevBtn.addEventListener('click', prevSlide);
