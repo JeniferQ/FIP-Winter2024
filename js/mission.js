@@ -1,8 +1,6 @@
 const goal = document.querySelector('#goal-text'),
-circle1 = document.querySelector('#ball1'),
-circle2 = document.querySelector('#ball2'),
-circleText1 = document.querySelector('#text1'),
-circleText2 = document.querySelector('#text2'),
+circle = document.querySelectorAll('.ball-pop'),
+circleText = document.querySelectorAll('.ball-text'),
 text = document.querySelector(".text-pop"),
 trees = document.querySelector("#tree-pop"),
 exp = document.querySelector(".text-expand"),
@@ -39,10 +37,8 @@ function checkScrollDistance() {
 
     function animateAchievementContainer() {
         goal.classList.add('animate');
-        circle1.classList.add('animate');
-        circle2.classList.add('animate');
-        circleText1.classList.add('animate');
-        circleText2.classList.add('animate');
+        circle.forEach(element => element.classList.add('animate'));
+        circleText.forEach(element => element.classList.add('animate'));
         text.classList.add('animate');
         trees.classList.add('animate');
         exp.classList.add('animate');

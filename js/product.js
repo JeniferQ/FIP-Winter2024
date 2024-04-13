@@ -1,6 +1,5 @@
 (() => {
     const slider = document.querySelector('#product-slider'),
-    banner = document.querySelector('#image-slider'),
     prevBtn = document.querySelector('#prev'),
     nextBtn = document.querySelector('#next'),
     productInfo = document.querySelector("#info"),
@@ -56,8 +55,7 @@
         const infoDiv = document.createElement("div");
         infoDiv.innerHTML = 
     
-        `<h2 class="hidden">Product Information</h2>
-        <div id="nut"><h1>${products[count].name}</h1></div>
+        `<div id="nut"><h1>${products[count].name}</h1></div>
         <div id="rating">
             <img class="stars" src="${products[count].rating}" alt="${products[count].stars} star rating">
             <a class="link" href="#">Read reviews</a>
@@ -66,17 +64,16 @@
         const tableDiv = document.createElement("div");
         tableDiv.innerHTML = 
     
-        `<h2 class="hidden">Nutritional Information</h2>
-        <h2>Nutrition Facts / Valeur Nutritive</h2>
+        `<h2>Nutrition Facts / Valeur Nutritive</h2>
         <h3>Serving Size: 355 mL</h3>
         <h4>Amount</h4>
         <ul id="nv-info">
-            <li><span class="label-heading">Calories</span><span class="label-value" id="cal">${values[count].cal}</span></li>
-            <li><span class="label-heading">Fat</span><span class="label-value" id="fat">${values[count].fat}</span></li>
-            <li><span class="label-heading">Sodium</span><span class="label-value" id="sodium">${values[count].sodium}</span></li>
-            <li><span class="label-heading">Carbohydrates</span><span class="label-value" id="carb">${values[count].carb}</span></li>
-            <li><span class="label-heading">Sugars</span><span class="label-value" id="sugar">${values[count].sugar}</span></li>
-            <li><span class="label-heading">Protein</span><span class="label-value" id="protein">${values[count].protein}</span></li>
+            <li><span>Calories</span><span class="label-value">${values[count].cal}</span></li>
+            <li><span>Fat</span><span class="label-value">${values[count].fat}</span></li>
+            <li><span>Sodium</span><span class="label-value">${values[count].sodium}</span></li>
+            <li><span>Carbohydrates</span><span class="label-value">${values[count].carb}</span></li>
+            <li><span>Sugars</span><span class="label-value">${values[count].sugar}</span></li>
+            <li><span>Protein</span><span class="label-value">${values[count].protein}</span></li>
         </ul>
         <p class="ing">${values[count].ing}</p>`
     
