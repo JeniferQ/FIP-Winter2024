@@ -148,11 +148,14 @@ header {
     margin-top: 150px;
 }
 
+#banner-contact p {
+    margin: 12px 0 0 0;
+}
+
 .content p {
     font-size: 13pt;
     line-height: 25px;
     margin: 10px 0 50px 0;
-
 }
 
 .content a {
@@ -885,7 +888,7 @@ header {
     }
 
     .icon p {
-        font-size: 12pt;
+        font-size: 13pt;
     }
 
     .icon .fa-solid {
