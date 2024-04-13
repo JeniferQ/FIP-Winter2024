@@ -151,37 +151,37 @@ header {
 .content p {
     font-size: 13pt;
     line-height: 25px;
-    margin-top: 10px;
+    margin: 10px 0 50px 0;
+
 }
 
-.content button {
+.content a {
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
     font-size: 11pt;
-    cursor: pointer;
+    text-decoration: none;
 
     background-color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 22px;
 
-    margin-top: 25px;
-    height: 50px;
-    width: 190px;
+    padding: 18px 8vw;
+    text-shadow: none;
     box-shadow: 0 6px 10px #00000066;
 }
 
-#banner-hero button {
+#banner-hero a {
     color: #61a042;
 }
 
-#banner-slider button {
+#banner-slider a {
     color: #b42024;
 }
 
-#banner-mission button {
+#banner-mission a {
     color: #007102;
 }
 
-#banner-story button {
+#banner-story a {
     color: #1c1c1c;
 }
 
@@ -347,11 +347,11 @@ header {
     transform: scale(1.03);
 }
 
-.content button, .form input[type=submit] {
+.content a, .form input[type=submit] {
     transition: background-color 0.2s ease;
 }
 
-.content button:hover {
+.content a:hover {
     background-color: #ededed;
 }
 
@@ -875,8 +875,9 @@ header {
         line-height: 30px;
     }
 
-    .content button {
-        width: 22vw;
+    .content a {
+        font-size: 12pt;
+        padding: 18px 5vw;
     }
 
     .content .icon, .form {
