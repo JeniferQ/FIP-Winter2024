@@ -7,8 +7,8 @@ header {
 
 .menu {
     background-color: #b42024;
-    top: 0;
     position: sticky;
+    top: 0;
     z-index: 2;
     box-shadow: 0 5px 8px #00000036;
 }
@@ -20,7 +20,6 @@ header {
 #logo {
     width: 80px;
     margin-right: 100px;
-    position: relative;
 }
 
 #top-nav label {
@@ -73,65 +72,7 @@ header {
     color: white;
 }
 
-/* Hero Container */
-
-.background-hero {
-    overflow: hidden;
-    background-color: #74b258;
-}
-
-.background-hero .grid-con {
-    grid-row: 1/1;
-    grid-column: 2/3;
-}
-
-.background-hero img {
-    grid-column: 1/-1;
-    grid-row: 1/1;
-    height: 100%;
-    width: auto;
-    justify-self: center;
-}
-
-/* Video Container */
-
-#video-con {
-    background-color: #b42024;
-}
-
-#video-con .content h2 {
-    margin: 60px 0 30px 0;
-}
-
-#video-con video {
-    grid-column: 1/-1;
-    grid-row: 1/1;
-    width: 100%;
-    max-height: 350px;
-    justify-self: center;
-    margin-bottom: 20px;
-}
-
-/* Background Picture Set Up */
-
-.background-picture {
-    overflow: hidden;
-}
-
-.background-picture .grid-con {
-    grid-row: 1/1;
-    grid-column: 2/3;
-}
-
-.background-picture img {
-    grid-column: 1/-1;
-    grid-row: 1/1;
-    height: 100%;
-    width: auto;
-    justify-self: center;
-}
-
-/* Other Containers */
+/* Containers */
 
 #banner-hero {
     height: 600px;
@@ -145,67 +86,87 @@ header {
     height: 800px;
 }
 
-.content {
-    position: relative;
+.background-hero {
+    overflow: hidden;
+    background-color: #74b258;
 }
 
-.up-hero {
-    animation: upslide 1s ease forwards;
+.background-hero .grid-con, .background-picture .grid-con, .bottom .grid-con, .products .grid-con {
+    grid-row: 1/1;
+    grid-column: 2/3;
 }
 
-.up-video, .up-mission, .up-story, .up-contact {
-    opacity: 0;
+.background-hero img, #video-con video, .background-picture img {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    justify-self: center;
 }
 
-.up-video.animate, .up-mission.animate, .up-story.animate, .up-contact.animate {
-    animation: upslide 1s ease forwards;
+.background-hero img {
+    height: 100%;
+    width: auto;
 }
 
-@keyframes upslide {
-    0% {
-        opacity: 0;
-        transform: translateY(5%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
+#video-con {
+    background-color: #b42024;
 }
+
+#video-con .content h2 {
+    margin: 60px 0 30px 0;
+}
+
+#video-con video {
+    width: 100%;
+    max-height: 350px;
+    margin-bottom: 20px;
+}
+
+.background-picture {
+    overflow: hidden;
+}
+
+.background-picture img {
+    height: 100%;
+    width: auto;
+}
+
+/* Text Styles */
 
 #banner-contact h2 {
     margin-top: 90px;
 }
 
-.content h2 {
+.content {
     font-family: 'League Spartan', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
     color: white;
-    margin-top: 150px;
+    text-shadow: 0 6px 6px #00000066;
+}
+
+.content h2 {
+    text-transform: uppercase;
     font-size: 24pt;
-    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    margin-top: 150px;
 }
 
 .content p {
-    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
-    color: white;
     font-size: 13pt;
     line-height: 25px;
     margin-top: 10px;
-    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 .content button {
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
     font-size: 11pt;
+    cursor: pointer;
 
     background-color: white;
-    border-radius: 20px;
     border: none;
-    cursor: pointer;
+    border-radius: 20px;
+
     margin-top: 25px;
     height: 50px;
     width: 190px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 10px #00000066;
 }
 
 #banner-hero button {
@@ -225,11 +186,9 @@ header {
 }
 
 .icon .fa-solid {
-    color: white;
+    float: left;
     font-size: 14pt;
     margin-top: 15px;
-    float: left;
-    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 .fa-phone, .fa-envelope {
@@ -237,7 +196,7 @@ header {
 }
 
 .icon {
-    margin: 5px 0 30px 0;
+    margin: 5px 0 15px 0;
 }
 
 .icon p {
@@ -248,15 +207,14 @@ header {
 
 .form {
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-shadow: 0 6px 6px #00000066;
 }
 
 .form label {
-    font-family: inherit;
-    font-size: 12pt;
-    color: white;
     display: block;
+    font-size: 12pt;
     margin-bottom: 5px;
-    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 .form input[type=text], .form input[type=submit], .form textarea{
@@ -264,12 +222,13 @@ header {
     border-radius: 15px;
     margin-bottom: 12px;
     padding: 12px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 10px #00000066;
 }
 
 .form input[type=text], .form textarea {
     font-size: 11pt;
     color: #414141;
+    line-height: 22px;
     border: 2px solid #e3e3e3;
     width: calc(100% - 30px);
 }
@@ -287,24 +246,16 @@ header {
     font-size: 12pt;
     color: white;
     background-color: #b42024;
-    border: 2px solid #ae0000;
+    border: none;
     width: 100%;
     cursor: pointer;
+    margin-top: 90px;
 }
-
-#send {
-    margin-top: 100px;
-}
-
 
 /* Footer */
 
 .bottom {
     background-color: white;
-}
-
-.bottom .grid-con {
-    grid-column: 2/3;
 }
 
 #footer {
@@ -317,13 +268,13 @@ header {
 
 #socials {
     text-align: right;
+    color: #b42024;
+    margin-top: 10px;
 }
 
 #socials .fa-brands {
-    margin-top: 10px;
-    padding-left: 5px;
-    color: #b42024;
     font-size: 30pt;
+    padding-left: 5px;
     cursor: pointer;
 }
 
@@ -359,30 +310,227 @@ header {
     text-align: center;
     line-height: 22px;
     color: #979797;
-
     padding-top: 30px;
     border-top: 1px solid #414141;
 }
 
-/* Mission Page */
+/* Index Animations */
+
+.up-hero, .up-video.animate, .up-mission.animate, .up-story.animate, .up-contact.animate {
+    animation: upslide 1s ease forwards;
+}
+
+.up-video, .up-mission, .up-story, .up-contact {
+    opacity: 0;
+}
+
+@keyframes upslide {
+    0% {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+#top-nav a, #socials .fa-brands, #bottom-nav li {
+    transition: transform 0.2s ease;
+}
+
+#top-nav a:hover, #bottom-nav li:hover {
+    transform: scale(1.05);
+}
+
+#socials .fa-brands:hover {
+    transform: scale(1.03);
+}
+
+.content button, .form input[type=submit] {
+    transition: background-color 0.2s ease;
+}
+
+.content button:hover {
+    background-color: #ededed;
+}
+
+.form input[type=submit]:hover {
+    background-color: #c60005;
+}
+
+/* Our Mission Page */
 
 #mission {
     height: 400px;
 }
 
+#achievement {
+    height: 450px;
+}
+
+.banner-website {
+    height: 320px;
+}
+
+/* Text Banner */
+
 .mission {
-    text-align: center;
     font-family: 'League Spartan', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: white;
+    text-align: center;
 }
 
 .mission h2 {
-    margin-top: 130px;
     font-size: 22pt;
+    background-color: #00d28c80;
+    margin-top: 130px;
     padding: 10px 10px 5px 10px;
-    background-color: rgba(0, 210, 140, 0.5);
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 6px #00000066;
+}
+
+.mission p {
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 35px;
+    margin-top: 20px;
+    text-shadow: 0 6px 6px #00000066;
+}
+
+/* Text Content */
+
+.text {
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    color: #421f14;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    font-size: 20pt;
+    text-transform: uppercase;
+    padding: 35px 0 5px 0;
+}
+
+.text p {
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 26px;
+    margin: 20px 0 30px 0;
+}
+
+.text h3 {
+    font-size: 14pt;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #b42024;
+    margin-top: 40px;
+}
+
+/* Achievement Container */
+
+.goals {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+#goal-text {
+    font-size: 13pt;
+    line-height: 30px;
+    margin-top: 15%;
+}
+
+.anim {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+.pop svg {
+    width: 100px;
+    height: 100px;
+    transform: rotate(270deg);
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+}
+
+.pop h3 {
+    font-size: 18pt;
+}
+
+.pop p {
+    padding-top: 5px;
+    font-size: 10pt;
+}
+
+.ball-text {
+    position: absolute;
+    top: 20%;
+    margin-left: 9px;
+}
+
+.text-pop {
+    font-size: 12pt;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#tree-pop, .text-expand {
+    display: none;
+}
+
+/* Button Banners */
+
+.web-button {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#web1 {
+    background-image: url(../images/pexels-kaboompics-com-5808.jpg);
+}
+
+#web2 {
+    background-image: url(../images/pexels-maria-paula-medina-13804626.jpg);
+}
+
+#web3 {
+    background-image: url(../images/venti-views-JBAPQ1g5h24-unsplash.jpg);
+}
+
+.web-button button {
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11pt;
+
+    background-color: #ffffff4d;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 220px;
+    padding: 10px;
+    height: 50px;
+    width: 90%;
+    box-shadow: 0 6px 10px #00000066;
+}
+
+/* Mission Animations */
+
+.mission p, #goal-text, .text h3, .ball-text, .text-pop, .web-button button {
+    opacity: 0;
+} 
+
+.mission h2, .web-button button.animate {
     animation: upappear 1s ease forwards;
 }
 
@@ -398,91 +546,36 @@ header {
 }
 
 .mission p {
-    font-size: 20pt;
-    font-weight: bold;
-    line-height: 35px;
-    margin-top: 20px;
-    opacity: 0;
-    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
     animation: reveal 1s 1s ease forwards;
 }
 
-.text {
-    margin-bottom: 20px;
+.ball-text.animate {
+    animation: reveal 1s 3s ease forwards;
 }
 
-.text h2 {
-    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    color: #421f14;
-    padding: 35px 0 5px 0;
-    font-size: 20pt;
+.text-pop.animate {
+    animation: reveal 1s 1s ease forwards;
 }
 
-.text p {
-    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
-    color: #421f14;
-    font-size: 12pt;
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 26px;
-    margin: 20px 0 30px 0;
+@keyframes reveal {
+    to {
+        opacity: 1;
+    }
 }
 
-.text h3 {
-    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    text-align: right;
-    color: #b42024;
-    font-size: 12pt;
-    margin-top: 40px;
-    opacity: 0;
-}
-
-.text h3.animate {
+.text h3.animate, #goal-text.animate {
     animation: reveal 2s ease forwards;
 }
 
-#achievement {
-    height: 450px;
+.web-button button {
+    transition: background-color 0.5s ease;
 }
 
-.goals {
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+.web-button button:hover {
+    background-color: #ffffff79;
 }
 
-#goal-text {
-    font-size: 13pt;
-    line-height: 30px;
-    margin-top: 15%;
-    opacity: 0;
-}
-
-#goal-text.animate {
-    animation: reveal 2s ease forwards;
-}
-
-.anim {
-    margin-top: 40px;
-}
-
-.anim {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.pop svg {
-    width: 100px;
-    height: 100px;
-    transform: rotate(270deg);
-    stroke-dashoffset: 1000;
-    stroke-dasharray: 1000;
-}
-
-#ball1.animate, #ball2.animate {
+.ball-pop.animate {
     animation: draw 2s 2s linear forwards;
 }
 
@@ -492,112 +585,7 @@ header {
     }
 }
 
-@keyframes reveal {
-    to {
-        opacity: 1;
-    }
-}
-
-#text1 {
-    opacity: 0;
-    position: absolute;
-    top: 20%;
-    margin-left: 10px;
-}
-
-#text2 {
-    opacity: 0;
-    position: absolute;
-    top: 20%;
-    margin-left: 8px;
-}
-
-#text1.animate, #text2.animate {
-    animation: reveal 1s 3s ease forwards;
-}
-
-.pop h3 {
-    font-size: 18pt;
-}
-
-.pop p {
-    padding-top: 5px;
-    font-size: 10pt;
-}
-
-.text-pop {
-    padding: 20px;
-    font-size: 10pt;
-    opacity: 0;
-}
-
-.text-pop.animate {
-    animation: reveal 1s 1s ease forwards;
-}
-
-#tree-pop, .text-expand {
-    display: none;
-}
-
-#web1 {
-    background-image: url(../images/pexels-kaboompics-com-5808.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-}
-
-#web2 {
-    background-image: url(../images/pexels-maria-paula-medina-13804626.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-}
-
-#web3 {
-    background-image: url(../images/venti-views-JBAPQ1g5h24-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-}
-
-.banner-website {
-    height: 320px;
-}
-
-.web-button {
-    text-align: center;
-}
-
-.web-button button {
-    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 11pt;
-    color: white;
-
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-
-    margin-top: 220px;
-    padding-top: 5px;
-    height: 50px;
-    width: 90%;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-    opacity: 0;
-}
-
-.web-button button.animate {
-    animation: upappear 1s ease forwards;
-}
-
 /* Products Page */
-
-.products .grid-con {
-    grid-row: 1/1;
-    grid-column: 2/3;
-}
 
 .wave {
     background-color: #b42024;
@@ -630,18 +618,27 @@ header {
     }
 }
 
-/* Slider Image */
+/* Product Slider */
 
 #can {
     overflow: hidden;
     position: relative;
     max-width: 240px;
     margin-left: 1.5vw;
+    animation: pop 0.5s ease 1 forwards;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #product-slider {
     display: flex;
-    transition: transform .5s ease-in-out;
 }
 
 #can img {
@@ -649,20 +646,18 @@ header {
     height: 100%;
 }
 
-/* Arrows */
-
 #prev, #next {
-    text-align: center;
-    z-index: 1;
-    font-size: 50px;
-    color: white;
-    border: none;
+    justify-self: center;
+    margin-top: 160%;
+    height: 40px;
     cursor: pointer;
-    background-color: transparent;
-    margin: 40%;
 }
 
-/* Content */
+#next {
+    transform: rotate(180deg);
+}
+
+/* Product Content */
 
 #info {
     text-align: center;
@@ -672,7 +667,6 @@ header {
 #info h1 {
     font-family: 'League Spartan';
     text-transform: uppercase;
-    color: white;
     font-size: 24pt;
     margin-top: 50px;
 }
@@ -683,22 +677,20 @@ header {
 
 .link {
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 12pt;
     color: white;
     margin-left: 20px;
-    font-size: 12pt;
 }
 
 #nv-table {
-    background-color: transparent;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    border: 1.5px solid white;
     color: white;
-
+    border: 2px solid white;
+    background-color: transparent;
     margin: 30px 0;
     padding: 15px;
     max-width: 380px;
     justify-self: center;
-    overflow: hidden;
 }
 
 #nv-table h2 {
@@ -714,7 +706,7 @@ header {
 
 #nv-table h4 {
     margin: 5px 8px;
-    font-size: 8.5pt;
+    font-size: 9pt;
     text-align: right;
 }
 
@@ -724,7 +716,7 @@ header {
 }
 
 #nv-table li:nth-child(odd) {
-    background-color: #dddddd7c;
+    background-color: #dddddd58;
 }
 
 #nv-table li {
@@ -754,16 +746,16 @@ header {
     color: white;
     height: 50px;
     width: 200px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 0 6px 10px #00000066;
 }
 
 #buy {
     background-color: #940005;
     border: 2px solid #840004;
-    border: none;
     margin-right: 6px;
+    border: none;
 }
 
 #write {
@@ -795,11 +787,35 @@ header {
     padding-left: 0;
 }
 
+/* Products Animation */
+
+#product-slider {
+    transition: transform .5s ease-in-out;
+}
+
+#buy, #write {
+    transition: background-color 0.3s ease;
+}
+
+#buy:hover {
+    background-color: #c60005;
+}
+
+#write:hover {
+    background-color: #ffffff2f;
+}
+
+.flavor-selector img {
+    transition: transform 0.2s ease;
+}
+
 .flavor-selector img:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05);
 }
 
 @media screen and (min-width: 775px) {
+
+    /* Index Page */
 
     #burger-con ul {
         text-align: right;
@@ -824,15 +840,6 @@ header {
         display: none;
     }
 
-    #space {
-        display: none;
-    }
-
-    .background-picture img {
-        height: auto;
-        width: 100%;
-    }
-
     #banner-mission, #banner-story {
         height: 500px;
     }
@@ -841,16 +848,17 @@ header {
         height: 700px;
     }
 
-    #banner-contact h2 {
-        font-size: 26pt;
-    }
-
-    #banner-contact .content h2 {
-        margin-top: 90px;
+    .background-picture img {
+        height: auto;
+        width: 100%;
     }
 
     #banner-contact .grid-con {
-        grid-template-rows: 200px 80px 100px 100px 100px;
+        grid-template-rows: 220px 60px 100px 100px 100px;
+    }
+
+    .background-hero .content h2 {
+        margin-top: 180px;
     }
 
     .content {
@@ -858,10 +866,12 @@ header {
     }
 
     .content h2 {
-        font-size: 28pt;
+        margin-top: 130px;
+        font-size: 26pt;
     }
 
     .content p {
+        font-size: 16pt;
         line-height: 30px;
     }
 
@@ -882,13 +892,18 @@ header {
         margin-top: 16px;
     }
 
+    .form label {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+
     .form input[type=text], .form input[type=submit], .form textarea {
-        padding: 14px 12px;
+        padding: 12px;
         width: calc(100% - 28px);
     }
 
     .form input[type=submit] {
-        padding: 14px 12px;
+        padding: 15px 12px;
         width: 100%;
     }
 
@@ -896,71 +911,77 @@ header {
         margin-top: 30px;
     }
 
-    #bottom-nav li {
+    #bottom-nav li, #bottom-nav li:last-child {
         margin: 0 3vw 0 0;
     }
 
-    #bottom-nav li:last-child{
-        margin-right: 3vw;
-    }
-
-    .web-button {
-        text-align: center;
-    }
-
-    .web-button button {
-        width: 90%;
-    }
-
-    #mission {
-        height: 400px;
-    }
-
-    .mission h2 {
-        margin-top: 120px;
-        font-size: 25pt;
-    }
-    
-    .mission p {
-        font-size: 18pt;
-        line-height: 35px;
-    }
+    /* Mission Page */
 
     #achievement {
         height: 500px;
     }
 
+    .mission h2 {
+        margin-top: 120px;
+        font-size: 26pt;
+    }
+    
+    .mission p {
+        font-size: 22pt;
+        line-height: 40px;
+    }
+
+    .text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .text h2 {
+        font-size: 21pt;
+    }
+    
+    .text p {
+        text-align: justify;
+        text-align-last: center;
+        text-justify: inter-word;
+        line-height: 28px;
+    }
+    
+    .text h3 {
+        font-size: 16pt;
+        line-height: 28px;
+    }
+
     #goal-text {
         font-size: 14pt;
         line-height: 32px;
-        margin-top: 10%;
+        margin-top: 8%;
     }
     
-    .pop {
-        width: 110px;
-        height: 110px;
-        border-radius: 50%;
+    .pop svg {
+        width: 120px;
+        height: 120px;
     }
     
     .pop h3 {
-        font-size: 18pt;
+        font-size: 20pt;
     }
     
     .pop p {
-        font-size: 11pt;
+        font-size: 12pt;
     }
     
     .text-pop {
-        font-size: 12pt;
+        margin-top: 30px;
     }
 
     #tree-pop {
-        background-image: url(../images/tree.svg);
-        margin: 50px auto 0 auto;
-        width: 50px;
-        height: 30px;
         display: grid;
         overflow: hidden;
+        background-image: url(../images/tree.svg);
+        margin: 40px auto 0 auto;
+        width: 50px;
+        height: 30px;
         opacity: 0;
     }
 
@@ -976,6 +997,7 @@ header {
     }
 
     .text-expand {
+        display: grid;
         margin-top: 15px;
         font-size: 10pt;
         opacity: 0;
@@ -985,24 +1007,30 @@ header {
         animation: reveal 1s 4s ease forwards;
     }
 
-    .text {
-        margin-bottom: 20px;
+    .web-button {
         text-align: center;
     }
-    
-    .text h2 {
-        font-size: 20pt;
+
+    .web-button button {
+        width: 90%;
     }
-    
-    .text p {
-        text-align: justify;
-        text-align-last: center;
-        text-justify: inter-word;
-        line-height: 28px;
+
+    /* Products Page */
+
+    #info {
+        grid-row: 1;
     }
-    
-    .text h3 {
-        font-size: 14pt;
+
+    #nv-table {
+        grid-row: 2;
+    }
+
+    .buttons {
+        grid-row: 3;
+    }
+
+    .flavors {
+        grid-row: 4;
     }
 
     .products .grid-con {
@@ -1017,7 +1045,13 @@ header {
         grid-row: 1/3;
     }
 
+    #prev, #next {
+        width: 25px;
+        margin-top: 22vw;
+    }
+
     #can {
+        margin-top: 40px;
         height: 500px;
     }
 
@@ -1035,12 +1069,13 @@ header {
     
     #nv-table {
         margin: 0;
+        padding: 13px;
         height: 285px;
         justify-self: left;
     }
 
     #nv-table h2 {
-        font-size: 13pt;
+        font-size: 12pt;
     }
 
     #nv-table h3 {
@@ -1069,9 +1104,9 @@ header {
     }
     
     #flavors p {
-        width: 40px;
-        font-size: 14pt;
-        margin-top: 20px;
+        width: 50px;
+        font-size: 13pt;
+        margin-top: 22px;
         text-align: left;
         float: left;
     }
@@ -1080,42 +1115,15 @@ header {
         padding-left: 5px;
         width: 45px;
     }
-    
-    .flavor-selector img:first-child {
-        padding-left: 0;
-    }
-    
-    .flavor-selector img:hover {
-        transform: scale(1.1, 1.1);
-    }
 
-    #info {
-        grid-row: 1;
+    #space {
+        display: none;
     }
-
-    #nv-table {
-        grid-row: 2;
-    }
-
-    .buttons {
-        grid-row: 3;
-    }
-
-    .flavors {
-        grid-row: 4;
-    }
-
 }
 
 @media screen and (min-width: 1200px) {
-    
-    #bottom-nav li {
-        margin: 0 3vw 0 0;
-    }
 
-    #bottom-nav li:last-child{
-        margin-right: 3vw;
-    }
+    /* Index Page */
 
     #socials {
         text-align: center;
@@ -1138,13 +1146,6 @@ header {
     #bottom-nav li:last-child{
         margin-right: 0;
     }
-    
-    #bottom-nav a {
-        text-decoration: none;
-        font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
-        font-size: 12pt;
-        color: #979797;
-    }
 
     .icon p {
         font-size: 14pt;
@@ -1152,18 +1153,55 @@ header {
 
     .icon .fa-solid {
         font-size: 18pt;
-        margin-top: 14px;
     }
 
-    #nv-table p {
-        font-size: 11pt;
-    }
-
-    #flavors p {
-        width: auto;
-    }
+    /* Our Mission Page */
 
     .text-expand {
         display: grid;
+    }
+
+    .web-button {
+        height: 320px;
+    }
+
+    .web-button button {
+        margin-top: 240px;
+        font-size: 12pt;
+    }
+
+    /* Products Page */
+
+    #prev, #next {
+        margin-top: 260px;
+    }
+
+    #nv-table {
+        height: 300px;
+    }
+
+    #nv-table h2 {
+        font-size: 13pt;
+    }
+
+    #nv-table h3 {
+        font-size: 11pt;
+    }
+
+    #nv-table ul li {
+        font-size: 11pt;
+    }
+
+    #nv-table p {
+        font-size: 10pt;
+    }
+    
+    .buttons {
+        margin-top: 50px;
+    }
+
+    #flavors p {
+        font-size: 15pt;
+        width: auto;
     }
 }
