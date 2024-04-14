@@ -1,3 +1,5 @@
+(() => {
+
 const goal = document.querySelector('#goal-text'),
 circle = document.querySelectorAll('.ball-pop'),
 circleText = document.querySelectorAll('.ball-text'),
@@ -54,3 +56,5 @@ function checkScrollDistance() {
 }
 
 window.onscroll = function() {checkScrollDistance()};
+
+})();

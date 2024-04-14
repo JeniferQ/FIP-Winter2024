@@ -1,4 +1,5 @@
 (() => {
+    
     const slider = document.querySelector('#product-slider'),
     prevBtn = document.querySelector('#prev'),
     nextBtn = document.querySelector('#next'),
