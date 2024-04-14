@@ -48,7 +48,6 @@
       
     function showSlide(index) {
         const newTranslateX = -index * slideWidth + 'px';
-        console.log(newTranslateX);
         slider.style.transform = 'translateX(' + newTranslateX + ')';
     }
 
@@ -97,6 +96,7 @@
         if (count >= products.length) {
             count = 0;
         }
+        console.log(products[count].name);
         showText();
         waveAnimation();
     }
@@ -114,6 +114,7 @@
         if (count < 0) {
             count = products.length-1;
         }
+        console.log(products[count].name);
         showText();
         waveAnimation();
     }
@@ -126,7 +127,9 @@
     function pickFlavor(index) {
         currentIndex = index;
         count = index;
-        showSlide(currentIndex);
+
+        console.log(products[count].name);
+        showSlide(index);
         showText(count);
         waveAnimation(count);
     }
