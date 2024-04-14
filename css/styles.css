@@ -762,7 +762,7 @@ header {
     font-size: 14pt;
     color: white;
     height: 50px;
-    width: 200px;
+    width: 180px;
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0 6px 10px #00000066;
@@ -797,7 +797,7 @@ header {
 .flavor-selector img {
     padding-left: 15px;
     display: inline-block;
-    width: 80px;
+    width: 70px;
 }
 
 .flavor-selector img:first-child {
