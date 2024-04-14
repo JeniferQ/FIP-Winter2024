@@ -949,9 +949,13 @@ header {
         height: 500px;
     }
 
+    #achievement.background-picture img {
+        height: 100%;
+    }
+
     .mission h2 {
         margin-top: 120px;
-        font-size: 26pt;
+        font-size: 25pt;
     }
     
     .mission p {
@@ -1157,7 +1161,7 @@ header {
         justify-self: center;
     }
 
-    .background-picture img {
+    .background-picture img, #achievement.background-picture img  {
         width: 100%;
         height: auto;
     }
