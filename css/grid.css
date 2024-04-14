@@ -45,7 +45,7 @@
 
 /* Tablet Grid */
 
-@media screen and (min-width: 775px) {
+@media screen and (min-width: 768px) {
 
     .grid-con {
         display: grid;
@@ -94,13 +94,6 @@
 /* Desktop Grid */
 
 @media screen and (min-width: 1200px) {
-
-    .full-width-grid {
-        display: grid;
-        grid-template-columns: 1fr minmax(0px, 1200px) 1fr;
-        grid-column: 1 / -1;
-        background-color: rgb(112, 115, 205);
-    }
 
     .grid-con {
         display: grid;

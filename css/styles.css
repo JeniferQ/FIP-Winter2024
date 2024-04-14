@@ -88,7 +88,7 @@ header {
 
 .background-hero {
     overflow: hidden;
-    background-color: #74b258;
+    background-color: #79B55D;
 }
 
 .background-hero .grid-con, .background-picture .grid-con, .bottom .grid-con, .products .grid-con {
@@ -99,12 +99,20 @@ header {
 .background-hero img, #video-con video, .background-picture img {
     grid-column: 1/-1;
     grid-row: 1/1;
+}
+
+#video-con video, .background-picture img {
     justify-self: center;
 }
 
 .background-hero img {
+    justify-self: end;
     height: 100%;
     width: auto;
+}
+
+.background-hero .content h2 {
+    margin-top: 50px;
 }
 
 #video-con {
@@ -121,6 +129,11 @@ header {
     margin-bottom: 20px;
 }
 
+#video-con img {
+    height: 100%;
+    width: 100%;
+}
+
 .background-picture {
     overflow: hidden;
 }
@@ -128,6 +141,10 @@ header {
 .background-picture img {
     height: 100%;
     width: auto;
+}
+
+#achievement.background-picture img {
+    height: 120%;
 }
 
 /* Text Styles */
@@ -139,6 +156,7 @@ header {
 .content {
     font-family: 'League Spartan', Arial, Helvetica, sans-serif;
     color: white;
+    position: relative;
     text-shadow: 0 6px 6px #00000066;
 }
 
@@ -282,18 +300,18 @@ header {
 }
 
 #bottom-nav ul {
-    margin: 50px 0 30px 0;
+    margin: 50px 0 10px 0;
     list-style-type: none;
     text-align: center;
 }
 
 #bottom-nav li {
     display: inline-block;
-    margin: 0 25px 20px 0;
+    margin: 0 20px 20px 0;
 }
 
 #bottom-nav li:first-child {
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 #bottom-nav li:last-child{
@@ -370,10 +388,6 @@ header {
 
 #achievement {
     height: 450px;
-}
-
-.banner-website {
-    height: 320px;
 }
 
 /* Text Banner */
@@ -497,15 +511,15 @@ header {
 }
 
 #web1 {
-    background-image: url(../images/pexels-kaboompics-com-5808.jpg);
+    background-image: url(../images/web-button-1.jpg);
 }
 
 #web2 {
-    background-image: url(../images/pexels-maria-paula-medina-13804626.jpg);
+    background-image: url(../images/web-button-2.jpg);
 }
 
 #web3 {
-    background-image: url(../images/venti-views-JBAPQ1g5h24-unsplash.jpg);
+    background-image: url(../images/web-button-3.jpg);
 }
 
 .web-button button {
@@ -816,7 +830,7 @@ header {
     transform: scale(1.05);
 }
 
-@media screen and (min-width: 775px) {
+@media screen and (min-width: 768px) {
 
     /* Index Page */
 
@@ -852,16 +866,26 @@ header {
     }
 
     .background-picture img {
-        height: auto;
-        width: 100%;
+        position: relative;
+        justify-self: center;
+        height: 100%;
+        width: auto;
     }
 
     #banner-contact .grid-con {
         grid-template-rows: 220px 60px 100px 100px 100px;
     }
 
+    .background-hero img {
+        justify-self: right;
+    }  
+
     .background-hero .content h2 {
-        margin-top: 180px;
+        margin-top: 140px;
+    }
+
+    .background-hero .content {
+        text-align: left;
     }
 
     .content {
@@ -912,7 +936,7 @@ header {
     }
 
     #bottom-nav ul {
-        margin-top: 30px;
+        margin: 30px 0;
     }
 
     #bottom-nav li, #bottom-nav li:last-child {
@@ -1129,6 +1153,15 @@ header {
 
     /* Index Page */
 
+    .background-hero img {
+        justify-self: center;
+    }
+
+    .background-picture img {
+        width: 100%;
+        height: auto;
+    }
+    
     #socials {
         text-align: center;
     }
